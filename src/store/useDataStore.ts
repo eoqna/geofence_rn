@@ -10,7 +10,7 @@ const defaultPosition: ApiResponse.position = {
   longitude: 0,
 }
 
-const useDataStore = create<DataState>()((set, get) => ({
+const useDataStore = create<DataState>()((set) => ({
   position: defaultPosition,
   setPosition: (data) => set({ position: data }),
 }));
